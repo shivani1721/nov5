@@ -3,14 +3,14 @@ on:
   push:
 jobs:
   myjob1:
-    runs-on: [self-hosted, runner2, linux, x64]
-    steps:
+     runs-on: [self-hosted, runner2, linux, x64]
+     steps:
       - name: mystep1
         run: |
           cat /etc/os-release
           ls -al
       - name: mystep2-checkout the source code
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: mystep3-check the source code
         run: ls -al
 
