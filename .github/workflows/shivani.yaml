@@ -14,7 +14,7 @@ jobs:
       - name: mystep3-check the source code
         run: ls -al
       - name: mystep4-check the docker image 
-        run: sudo docker image build -t shivanipanwar/shivaniimage_nov5:t2 -f Dockerfile .
+        run: docker image build -t shivanipanwar/shivaniimage_nov5:t2 -f Dockerfile .
       - name: mystep5-check the docker image 
         run: docker images 
 
