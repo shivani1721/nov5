@@ -1,0 +1,14 @@
+name: myworkflow1
+on:
+  push:
+jobs:
+  myjob1:
+    runs-on: [self-hosted, runner2, linux, x64]
+    steps:
+      - name: mystep1
+        run: |
+          cat /etc/os-release
+          ls -al
+
+
+
